@@ -11,6 +11,7 @@
 #   "scipy",
 #   "numpy",
 #   "networkx",
+#   "streamlit",
 # ]
 # ///
 
