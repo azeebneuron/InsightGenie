@@ -1,1 +1,5 @@
-
+[theme]
+# Sunset Vibes
+primaryColor = "#FF6B6B"         # Coral
+backgroundColor = "#FFE6E6"      # Light pink
+secondaryBackgroundColor = "#FFD1D1"  # Medium pink

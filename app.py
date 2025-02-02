@@ -44,8 +44,61 @@ st.write("""
     This app helps you analyze and visualize your data with ease.
 """)
 
-# File upload section between lines
-st.markdown("---")
+st.markdown("""
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        /* Main body text */
+        .stApp {
+            font-family: 'Righteous', cursive;
+        }
+        
+        /* Titles and headers */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Righteous', cursive !important;
+        }
+        
+        /* Sidebar */
+        .css-1d391kg, .css-163ttbj {
+            font-family: 'Righteous', cursive;
+        }
+        
+        /* Buttons */
+        .stButton > button {
+            font-family: 'Righteous', cursive !important;
+        }
+        
+        /* Text input, number input */
+        .stTextInput > div > div > input, .stNumberInput > div > div > input {
+            font-family: 'Righteous', cursive !important;
+        }
+        
+        /* Select boxes */
+        .stSelectbox > div > div > select {
+            font-family: 'Righteous', cursive !important;
+        }
+        
+        /* File uploader */
+        .stFileUploader > div > div {
+            font-family: 'Righteous', cursive !important;
+        }
+
+        /* Footer */
+        footer {
+            font-family: 'Righteous', cursive !important;
+        }
+        
+        /* Specific footer elements */
+        .element-container:last-of-type {
+            font-family: 'Righteous', cursive !important;
+        }
+        
+        /* Main footer container */
+        .css-1lsmgbg {
+            font-family: 'Righteous', cursive !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
 @log_execution_time
@@ -119,12 +172,31 @@ def main():
             display_error(f"An error occurred: {e}")
 
 # Footer
-st.markdown("---")
-st.write("""
-    **Data Analysis App**
-    Made with ❤️ by Your Name
-    [GitHub](https://github.com/your-username) | [LinkedIn](https://linkedin.com/in/your-profile)
-""")
+st.markdown("""
+<style>
+    .footer {
+        font-family: 'Righteous', cursive !important;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+    .footer a {
+        color: #FF6B6B !important;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="footer">
+    <p>Made with ❤️ by Rahul</p>
+    <p>
+        <a href="https://github.com/azeebneuron">GitHub</a> | 
+        <a href="https://linkedin.com/in/azeebneuron">LinkedIn</a>
+    </p>
+</div>
+""", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
