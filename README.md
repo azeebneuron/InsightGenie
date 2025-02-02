@@ -10,6 +10,27 @@ A modular Streamlit application for data analysis, visualization, and AI-powered
 
 ---
 
+### **1. Home Page**
+The home page provides a clean and intuitive interface for uploading your CSV file. It includes a sidebar for file upload and settings, along with a main area that displays the uploaded data in a tabular format.
+
+![Home Page](samples/home.png)
+
+---
+
+### **2. Generate Visualizations**
+This section allows you to explore various visualizations based on your dataset. You can generate distribution plots, correlation heatmaps, box plots, and more. The interface is interactive, enabling you to customize the visualizations based on your preferences.
+
+![Visualizations Page](samples/visualisations.png)
+
+---
+
+### **3. AI-Powered Insights**
+Leverage the power of AI to gain deeper insights into your data. This feature integrates with OpenAI's API to provide textual insights, key findings, and recommendations. Simply click the "Generate Insights" button, and the app will analyze your data to deliver actionable insights.
+
+![AI Insights Page](samples/aiinsight.png)
+
+---
+
 ## **Features**
 
 - **Data Loading**:
